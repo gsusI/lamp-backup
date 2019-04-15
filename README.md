@@ -37,7 +37,7 @@ The following commands will do this and set some important file permissions.
         && sudo chmod a+x $INSTALL_DIR/sbin/lamp-backup*.sh $INSTALL_DIR/sbin/mysql-backup.sh \
         && rm -rf lamp-backup-master master.zip
 
-(2) Edit `/usr/local/etc/mysql-connection.cfg` and set the password for your MySQL root user.
+(2) Edit `/usr/local/etc/mysql-connection.cnf` and set the password for your MySQL root user.
 Make sure this file is readable only by root.
 
 (3) To enable offsite backups to [Amazon S3](http://aws.amazon.com/s3), run the following and enter your AWS access key and secret:
